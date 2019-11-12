@@ -9,6 +9,10 @@ class App extends Component {
     characters
   };
 
+   handleClick = (e) => {
+    console.log(e)
+  }
+
   render() {
     return (
       <div className="app">
@@ -17,9 +21,9 @@ class App extends Component {
           <Photo src={image}
           alt={name}
           key={id}
-          id={id} />
+          id={id}
+          onClick={this.handleClick} />
         ))}
-        {console.log(this.state.characters)}
       </div>
     );
   }
