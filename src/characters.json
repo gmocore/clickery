@@ -1,0 +1,67 @@
+[
+    {
+        "id": 0,
+        "name": "Avon Barksdale",
+        "image": "/assets/images/avon.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Brodie",
+        "image": "/assets/images/brodie.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Bunny Colefield",
+        "image": "/assets/images/bunny.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Tommy Carcetti",
+        "image": "/assets/images/carcetti.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Cheese",
+        "image": "/assets/images/cheese.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Kima Greggs",
+        "image": "/assets/images/greggs.jpg"
+    },
+    {
+        "id": 7,
+        "name": "marlo Stansfield",
+        "image": "/assets/images/marlo.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Jimmy McNulty",
+        "image": "/assets/images/mcnulty.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Omar Little",
+        "image": "/assets/images/omar.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Lt Daniels",
+        "image": "/assets/images/reddick.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Snoop",
+        "image": "/assets/images/snoop.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Spiros The Greek",
+        "image": "/assets/images/spiros.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Stringer Bell",
+        "image": "/assets/images/stringer.jpg"
+    }
+]
