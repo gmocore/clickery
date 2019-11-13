@@ -63,7 +63,6 @@ class App extends Component {
     }
   };
 
-  // fisher-yates shuffle algorithm found on stack-overflow
   shuffle = array => {
     let currentIndex = array.length;
 
@@ -75,7 +74,6 @@ class App extends Component {
       array[currentIndex] = array[randomIndex];
       array[randomIndex] = tempValue;
     }
-    // set characters to shuffled order
     this.setState({ characters: characters });
   };
 
