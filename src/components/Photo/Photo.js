@@ -5,7 +5,7 @@ const Photo = ({ src, alt, id, onClick }) => (
    
  
     <img
-      className="img-thumbnail"
+      className="img-thumbnail m-2"
       style={{ height: "200px", width: "200px" }}
       src={src}
       alt={alt}

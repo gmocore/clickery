@@ -12,23 +12,39 @@ class App extends Component {
     highScore: 0
   };
 
+  renderCards = () => this.state.characters.map(({ id, name, image }) => (
+      <Photo
+        src={image}
+        alt={name}
+        key={id}
+        id={id}
+        // onClick={()=> this.shuffle(this.state.characters)}
+        onClick={this.cardClicked}
+      />
+    ))
+  
+
   updateScore = () => {
     this.setState({score: this.state.score + 1})
   };
 
-  gameOver = () => this.setState({score: 0, clicked: []})
+  gameOver = () => this.setState({score: 0, clicked: []});
+
+  checkHighScore = () => {
+    if (this.state.score >= this.state.highScore) {
+      this.setState({highScore: this.state.score + 1})
+    }
+  }
 
   cardClicked = e => {
     let id = e.target.id;
-    console.log(id);
     this.setState({ clicked: [...this.state.clicked, id] });
     this.shuffle(this.state.characters);
     if (this.state.clicked.includes(id)) {
-      console.log("this was already clicked");
       this.gameOver();
     } else {
-      console.log("new card clicked");
       this.updateScore();
+      this.checkHighScore();
     }
   };
 
@@ -49,19 +65,11 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <p onClick={this.updateScore}>{this.state.score}</p>
 
-        <Nav />
-        {this.state.characters.map(({ id, name, image }) => (
-          <Photo
-            src={image}
-            alt={name}
-            key={id}
-            id={id}
-            // onClick={()=> this.shuffle(this.state.characters)}
-            onClick={this.cardClicked}
-          />
-        ))}
+        <Nav score={this.state.score} highScore={this.state.highScore}/>
+        <div className="container">
+        {this.renderCards()}
+        </div>
       </div>
     );
   }

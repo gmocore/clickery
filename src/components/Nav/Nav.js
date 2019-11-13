@@ -1,6 +1,6 @@
 import React from "react";
 
-function Nav() {
+function Nav({score, highScore}) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <p className="navbar-brand" >
@@ -26,24 +26,15 @@ function Nav() {
           </li>
           <li className="nav-item">
             <p className="nav-link" >
-              Features
+              Score: {score}
             </p>
           </li>
           <li className="nav-item">
             <p className="nav-link" >
-              Pricing
+              High Score: {highScore}
             </p>
           </li>
-          <li className="nav-item">
-            <p
-              className="nav-link disabled"
-              
-              tabIndex="-1"
-              aria-disabled="true"
-            >
-              Disabled
-            </p>
-          </li>
+         
         </ul>
       </div>
     </nav>
