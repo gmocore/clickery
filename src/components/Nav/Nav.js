@@ -1,12 +1,12 @@
 import React from "react";
 
-function Nav({score, highScore}) {
+function Nav({score, highScore, message}) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark shadow">
       <p className="navbar-brand" >
-        Navbar
+        Clickery
       </p>
-      <button
+      {/* <button
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -16,14 +16,9 @@ function Nav({score, highScore}) {
         aria-label="Toggle navigation"
       >
         <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
+      </button> */}
+      <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item active">
-            <p className="nav-link" >
-              Home <span className="sr-only">(current)</span>
-            </p>
-          </li>
           <li className="nav-item">
             <p className="nav-link" >
               Score: {score}
@@ -34,7 +29,11 @@ function Nav({score, highScore}) {
               High Score: {highScore}
             </p>
           </li>
-         
+          <li className="nav-item">
+            <p className="nav-link" >
+               {message}
+            </p>
+          </li>
         </ul>
       </div>
     </nav>
