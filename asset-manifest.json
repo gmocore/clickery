@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/clickery/static/css/main.ac603169.chunk.css",
+    "main.js": "/clickery/static/js/main.d38d0347.chunk.js",
+    "main.js.map": "/clickery/static/js/main.d38d0347.chunk.js.map",
+    "runtime-main.js": "/clickery/static/js/runtime-main.43b32d55.js",
+    "runtime-main.js.map": "/clickery/static/js/runtime-main.43b32d55.js.map",
+    "static/js/2.3bc679f7.chunk.js": "/clickery/static/js/2.3bc679f7.chunk.js",
+    "static/js/2.3bc679f7.chunk.js.map": "/clickery/static/js/2.3bc679f7.chunk.js.map",
+    "index.html": "/clickery/index.html",
+    "precache-manifest.e4e82eb15924194dc17258c26ac75aee.js": "/clickery/precache-manifest.e4e82eb15924194dc17258c26ac75aee.js",
+    "service-worker.js": "/clickery/service-worker.js",
+    "static/css/main.ac603169.chunk.css.map": "/clickery/static/css/main.ac603169.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43b32d55.js",
+    "static/js/2.3bc679f7.chunk.js",
+    "static/css/main.ac603169.chunk.css",
+    "static/js/main.d38d0347.chunk.js"
+  ]
+}
