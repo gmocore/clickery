@@ -28,29 +28,26 @@ class App extends Component {
     ));
 
   updateScore = () => {
-    debugger
-    this.setState({score: this.state.score + 1});
-    // if (this.state.score > 1) {
-    //   this.setState({
-    //     message: "You Win! looks like you know all about them corner boys",
-    //     score: 0,
-    //     clicked: []
-    //   });
-    // } else {
-    //   this.setState({ score: this.state.score + 1, message: "Correct!" });
-    //   setTimeout(() => {
-    //     this.setState({ message: `Don't screw up!` });
-    //   }, 750);
-    // }
+    if (this.state.score > 13) {
+      this.setState({
+        message: "You Win! looks like you know all about them corner boys",
+        score: 0,
+        clicked: []
+      });
+    } else {
+      this.setState({ score: this.state.score + 1, message: "Correct!" });
+      setTimeout(() => {
+        this.setState({ message: `Don't screw up!` });
+      }, 750);
+    }
   };
-
-
 
   gameOver = () => {
     this.setState({
       score: 0,
       clicked: [],
-      message: "you already guessed that, you just dropped a body, click a card to try again"
+      message:
+        "you already guessed that, you just dropped a body, click a card to try again"
     });
     document.querySelector(".message").classList.add("text-danger");
     document.querySelector(".images").classList.add("shake");
