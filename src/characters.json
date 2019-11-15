@@ -1,16 +1,16 @@
 [
     {
-        "id": 0,
+        "id": 1,
         "name": "Avon Barksdale",
         "image": "./assets/images/avon.jpg"
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "Brodie",
         "image": "./assets/images/brodie.jpg"
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Bunny Colefield",
         "image": "./assets/images/bunny.jpg"
     },
